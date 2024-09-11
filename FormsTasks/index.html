@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+
+    <!--
+    <style>
+        
+        /*input:valid{
+            background-color: green;
+        }
+        input:invalid{
+            background-color: red;
+        }
+        input:focus:invalid{
+            background-color: black;
+    }
+       
+    </style>
+    -->
+    
+</head>
+
+<body style="background-color: rgb(173, 126, 218); position: relative;">
+
+    <form action="welcome.html" method="post" enctype="application/x-www-form-urlencoded"
+        style=" background-color: white; width: 600px; border-radius: 3px; padding: 20px; margin-left: auto; margin-right: auto;">
+
+        <h3>Registration</h3>
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; ">
+            <div style="display: flex; flex-direction: column; "><label for="fullName"
+                    style="display: block; margin-right: 10px; margin-bottom: 10px;">Full Name</label>
+                <input required style=" border-color: gray; border: 1px solid #ccc; border-radius: 4px; padding: 7px;"
+                    placeholder="Enter Your Name" type="text" id="fullName" name="fullName">
+            </div>
+            <div style="display: flex; flex-direction: column;"> <label for="userName" style="display: block; margin-bottom: 10px; ">User
+                    Name</label>
+                <input required placeholder="Enter your username" style=" border-color: gray; border: 1px solid #ccc; border-radius: 4px; padding: 7px;"
+                    type="text" id="userName" name="userName">
+            </div>
+
+        </div>
+
+
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom:10px ;">
+            <div style="display: flex; flex-direction: column; "><Label for="email"
+                    style="display: block; margin-right: 10px ; margin-bottom: 10px; ">Email</Label>
+                <input placeholder="Enter your email" required style=" border-color: gray; border: 1px solid #ccc; border-radius: 4px; padding: 7px;"
+                    type="email" id="email" name="email">
+            </div>
+
+            <div style="display: flex; flex-direction: column;"><label for="phoneNumber" style="display: block; margin-bottom: 10px; ">Phone
+                    Number</label>
+                <input placeholder="Enter your phone number" style=" border-color: gray; border: 1px solid #ccc; border-radius: 4px; padding: 7px;" type="tel"
+                    id="phoneNumber" name="phoneNumber" required pattern="^01[0-2]\d{1,8}$">
+            </div>
+
+        </div>
+
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px;">
+
+            <div style="display: flex; flex-direction: column; "> <label for="password"
+                    style="display: block; margin-right: 10px; margin-bottom: 10px; ">Password</label>
+                <input placeholder="Enter your Password" required style=" border-color: gray; border: 1px solid #ccc; border-radius: 4px; padding: 7px;"
+                    type="password" id="password" name="password">
+            </div>
+            <div style="display: flex; flex-direction: column;"> <label for="confirmPassword"
+                    style="display: block; margin-bottom: 10px; ">Confirm Password</label>
+                <input placeholder="Confirm your Password" required style=" border-color: gray; border: 1px solid #ccc; border-radius: 4px; padding: 7px;"
+                    type="password" name="confirmPassword" id="confirmPassword">
+            </div>
+
+
+        </div>
+
+        <div style="margin-top: 20px;"> <label style="display: block; margin-bottom: 10px;">Gender</label>
+            
+            <input type="radio" name="gender" value="male">Male
+            <input type="radio" name="gender" value="female">Female
+            <input type="radio" name="gender" value="prefer not to say">Prefer not to say
+          
+        </div>
+
+        <br>
+
+       <input type="submit" style="background-color: rgb(173, 126, 218) ;cursor: pointer; text-decoration: none; width: 100%; color: white; border: 0; border-radius: 3px; padding: 7px; text-align: center;">
+
+        <!--<input
+            style="background-color: rgb(173, 126, 218) ;cursor: pointer; text-decoration: none; width: 100%; color: white; border: 0; border-radius: 3px; padding: 7px; text-align: center;"
+            type="submit">Register</input>-->
+
+    </form>
+
+
+
+
+</body>
+
+</html>

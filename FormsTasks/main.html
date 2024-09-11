@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form2</title>
+
+    
+</head>
+
+<body>
+
+    <section style="display: flex; flex-direction: column; align-items: center;">
+        
+
+        <h2 style="text-align: center;">Exhibitor Registration</h2>
+
+
+        <form action="welcome.html" method="post" enctype="application/x-www-form-urlencoded"
+            style=" position: relative; margin-top: 20px; background-color: antiquewhite; width: 900px; border-radius: 3px; padding: 20px; display: flex; justify-content: space-between;  margin-left: auto; margin-right: auto;">
+
+           
+            <div style="display: flex; flex-direction: column; flex: 1;">
+                <div style="display: flex; align-items: center; "><label for="prefix">Prefix</label>
+                    <input required type="text"
+                        style=" border-color: gray; margin-left:40px ; border: 1px solid #ccc; border-radius: 4px; padding: 7px;"
+                        id="prefix" name="prefix">
+                </div>
+                <br>
+
+                <div style="display: flex; align-items: center; "><label style="margin-right: 10px;"
+                        for="name">Name</label>
+                    <div style=" display: flex; justify-content: space-between;"><input required type="text"
+                            placeholder="FirstName" name="name" id="name"
+                            style=" border-color: gray; border: 1px solid #ccc; width: 40%; border-radius: 4px; padding: 7px;"><br>
+                        <input required type="text" name="name" id="name"
+                            style=" border-color: gray; border: 1px solid #ccc; width: 44%; border-radius: 4px; padding: 7px;"
+                            placeholder="Last Name">
+                    </div>
+                </div>
+
+                <br>
+                <div style="display: flex; align-items: center; "><label for="preferredpron">Preferred Pronouns</label>
+                    <input required
+                        style=" border-color: gray; border: 1px solid #ccc; margin-left: 10px; border-radius: 4px; padding: 7px;"
+                        type="text" id="preferredPron" name="preferredPron">
+                </div>
+
+                <br>
+
+                <div style="display: flex; align-items: center; "><label for="email">Email</label>
+                    <input required
+                        style=" border-color: gray; border: 1px solid #ccc; margin-left: 10px; border-radius: 4px; padding: 7px;"
+                        type="email" id="email" name="email" placeholder="Sample@example.com">
+                </div>
+
+                <br>
+
+                <div style="display: flex; align-items: center; "><label for="workPhone">Work Phone</label>
+                    <input type="tel" required id="workphone"
+                        style=" border-color: gray; border: 1px solid #ccc; margin-left: 10px; border-radius: 4px; padding: 7px;"
+                        name="workPhone">
+                </div>
+                <br>
+                <div style="display: flex; align-items: center; ">
+                    <label for="cellPhone">Cell Phone</label>
+                    <input type="tel" required pattern="^01[0-2]\d{1,8}$" id="cellPhone" name="cellPhone"
+                        style=" border-color: gray;border: 1px solid #ccc; margin-left: 10px; border-radius: 4px; padding: 7px;">
+                </div>
+                <br>
+                <div style="display: flex; align-items: center; ">
+                    <label for="jobTitle">Job Title</label>
+                    <input required type="text" id="jobTitle" name="jobTitle"
+                        style="border-color: gray; border: 1px solid #ccc; margin-left: 10px; border-radius: 4px; padding: 7px;">
+                </div>
+                <br>
+                <div style="display: flex; align-items: center; ">
+                    <label for="fullAddress">Full Business Address</label>
+                    <input required width="100%" type="text" id="fullAddress" name="fullAddress"
+                        style=" border-color: gray; margin-left: 10px; border: 1px solid #ccc; border-radius: 4px; padding: 7px;">
+                </div>
+
+                <br>
+                <div style="display: flex; align-items: center;"> <label for="companyWeb">Company Website</label>
+                    <input width="100%" required type="text" id="companyWeb" name="companyWeb"
+                        style="margin-left: 10px; border-color: gray; border: 1px solid #ccc; border-radius: 4px; padding: 7px;">
+                </div>
+
+
+
+            </div>
+
+
+            <div style="display: flex; flex-direction: column; flex: 1;">
+
+                <div style="display: flex; align-items: center;"> <label for="companyDesc">Company Description</label>
+                    <textarea required name="companyDesc" minlength="4" maxlength="10"
+                        style="margin-left: 10px; padding: 5px; border-color: gray; border: 1px solid #ccc; border-radius: 4px; "
+                        id="companyDesc"></textarea>
+                </div>
+
+                <br>
+                <div style="display: flex; align-items: center;"><label for="productExh">Company Exhibit</label>
+                    <textarea required name="productExh" minlength="4" maxlength="10"
+                        style=" margin-left: 10px; border-color: gray; border: 1px solid #ccc; border-radius: 4px; "
+                        id="productExh"></textarea>
+                </div>
+                <br>
+
+
+
+                <label> What type of booth do you like?</label>
+                <div style="text-indent: 30px; display: flex; flex-direction: column;">
+                    <p style="width: 100%;"><input type="radio" name="boothType" value="personBooth">In-person booth
+                        only</p>
+
+                    <p style="width: 100%;"> <input type="radio" name="boothType" value="virtualBooth">Virtual booth
+                        only
+                    </p>
+                    <p style="width: 100%;"> <input type="radio" name="boothType" value="bothBooth">Virtual & In-person
+                        boothType
+                    </p>
+                </div>
+
+             
+                <label for="staff">List your staff (name, email, phone)</label>
+
+
+                <input type="text" min="5" max="7" id="staff" name="staff">
+                <br>
+                
+
+
+
+                <label for="competitors">Competitors you don't want to be near</label>
+                <input type="text" min="5" max="10" id="competitors" name="competitors"><br>
+
+                
+
+            </div>
+            
+        </form>
+    </section>
+</body>
+
+</html>
